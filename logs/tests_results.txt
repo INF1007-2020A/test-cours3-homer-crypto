@@ -1,49 +1,62 @@
 test_capitalize_first_letter (__main__.TestExercice) ... ERROR
-test_linking_words (__main__.TestExercice) ... ERROR
-test_lower_case_names (__main__.TestExercice) ... ERROR
-test_upper_case_names (__main__.TestExercice) ... ERROR
+test_linking_words (__main__.TestExercice) ... FAIL
+test_lower_case_names (__main__.TestExercice) ... FAIL
+test_upper_case_names (__main__.TestExercice) ... FAIL
 
 ======================================================================
 ERROR: test_capitalize_first_letter (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 24, in test_capitalize_first_letter
-    output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    for i in range(mots_miniscules):
-TypeError: 'list' object cannot be interpreted as an integer
+  File "test_exercice.py", line 25, in test_capitalize_first_letter
+    output_first_letters = list(map(lambda name: name[0], output))
+  File "test_exercice.py", line 25, in <lambda>
+    output_first_letters = list(map(lambda name: name[0], output))
+TypeError: 'NoneType' object is not subscriptable
 
 ======================================================================
-ERROR: test_linking_words (__main__.TestExercice)
+FAIL: test_linking_words (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 60, in test_linking_words
-    output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    for i in range(mots_miniscules):
-TypeError: 'list' object cannot be interpreted as an integer
+  File "test_exercice.py", line 64, in test_linking_words
+    'Les mots de liaison doivent etre en minuscule'
+AssertionError: Lists differ: [None, None] != ['Antigua and Barbuda', 'Bosnia and Herzegovina']
+
+First differing element 0:
+None
+'Antigua and Barbuda'
+
+- [None, None]
++ ['Antigua and Barbuda', 'Bosnia and Herzegovina'] : Les mots de liaison doivent etre en minuscule
 
 ======================================================================
-ERROR: test_lower_case_names (__main__.TestExercice)
+FAIL: test_lower_case_names (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 35, in test_lower_case_names
-    output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    for i in range(mots_miniscules):
-TypeError: 'list' object cannot be interpreted as an integer
+  File "test_exercice.py", line 39, in test_lower_case_names
+    'Certaines lettres ne doivent pas etre en minuscules'
+AssertionError: Lists differ: [None, None, None, None, None, None, None,[283 chars]None] != ['Afghanistan', 'Albania', 'Algeria', 'And[634 chars]ana']
+
+First differing element 0:
+None
+'Afghanistan'
+
+Diff is 1341 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en minuscules
 
 ======================================================================
-ERROR: test_upper_case_names (__main__.TestExercice)
+FAIL: test_upper_case_names (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 44, in test_upper_case_names
-    output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    for i in range(mots_miniscules):
-TypeError: 'list' object cannot be interpreted as an integer
+  File "test_exercice.py", line 48, in test_upper_case_names
+    'Certaines lettres ne doivent pas etre en majuscule'
+AssertionError: Lists differ: [None, None, None, None, None, None, None,[283 chars]None] != ['Afghanistan', 'Albania', 'Algeria', 'And[634 chars]ana']
+
+First differing element 0:
+None
+'Afghanistan'
+
+Diff is 1341 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.001s
+Ran 4 tests in 0.011s
 
-FAILED (errors=4)
+FAILED (failures=3, errors=1)
