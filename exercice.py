@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
     # TODO completer la fonction
-    if print(nom.find('and'))
-    print(nom.capitalize())
+    nom.capit
     return nom
 
 
