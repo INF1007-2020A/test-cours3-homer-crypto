@@ -9,9 +9,9 @@ ERROR: test_capitalize_first_letter (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 24, in test_capitalize_first_letter
     output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    if i in range(mots_miniscules):
-NameError: name 'i' is not defined
+  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 6, in capitaliser_pays
+    for i in range(mots_miniscules):
+TypeError: 'list' object cannot be interpreted as an integer
 
 ======================================================================
 ERROR: test_linking_words (__main__.TestExercice)
@@ -19,9 +19,9 @@ ERROR: test_linking_words (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 60, in test_linking_words
     output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    if i in range(mots_miniscules):
-NameError: name 'i' is not defined
+  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 6, in capitaliser_pays
+    for i in range(mots_miniscules):
+TypeError: 'list' object cannot be interpreted as an integer
 
 ======================================================================
 ERROR: test_lower_case_names (__main__.TestExercice)
@@ -29,9 +29,9 @@ ERROR: test_lower_case_names (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 35, in test_lower_case_names
     output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    if i in range(mots_miniscules):
-NameError: name 'i' is not defined
+  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 6, in capitaliser_pays
+    for i in range(mots_miniscules):
+TypeError: 'list' object cannot be interpreted as an integer
 
 ======================================================================
 ERROR: test_upper_case_names (__main__.TestExercice)
@@ -39,9 +39,9 @@ ERROR: test_upper_case_names (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 44, in test_upper_case_names
     output = list(map(exercice.capitaliser_pays, altered_names))
-  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 7, in capitaliser_pays
-    if i in range(mots_miniscules):
-NameError: name 'i' is not defined
+  File "/home/runner/work/test-cours3-homer-crypto/test-cours3-homer-crypto/exercice.py", line 6, in capitaliser_pays
+    for i in range(mots_miniscules):
+TypeError: 'list' object cannot be interpreted as an integer
 
 ----------------------------------------------------------------------
 Ran 4 tests in 0.001s
