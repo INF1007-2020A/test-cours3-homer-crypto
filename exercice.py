@@ -6,7 +6,8 @@ def capitaliser_pays(nom):
     if i in range(mots_miniscules):
         nom.capitalize()
         nom = nom.replace(mots_miniscules[i],mots_miniscules[i].lower());
-    
+    else
+    nom.capitalize();
     return nom
 
 
