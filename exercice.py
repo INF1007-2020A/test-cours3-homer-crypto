@@ -4,7 +4,7 @@ def capitaliser_pays(nom):
     # TODO completer la fonction
     mots_miniscules = ['and','et']
     nom.capitalize()
-    
+    return nom
 
 
 if __name__ == '__main__':
