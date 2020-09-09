@@ -3,7 +3,7 @@
 def capitaliser_pays(nom):
     # TODO completer la fonction
     mots_miniscules = ['and','et']
-    if i in range(mots_miniscules):
+     i in range(mots_miniscules):
         nom.capitalize()
         nom.replace(mots_miniscules[i],mots_miniscules[i].lower())
         else
