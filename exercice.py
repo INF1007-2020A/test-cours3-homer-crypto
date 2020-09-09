@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
     # TODO completer la fonction
-    mots_miniscule = [and]
+    mots_miniscule = [and']
     nom.capitalize()
     return nom
 
