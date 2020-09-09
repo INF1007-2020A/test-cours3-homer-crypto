@@ -5,7 +5,7 @@ def capitaliser_pays(nom):
     mots_miniscules = ['and','et']
     nom.capitalize()
     for i in range(mots_miniscules):
-        test_str = test_str.replace(capitalized_words[i],capitalized_words[i].capitalize())
+        nom = nom.replace(capitalized_words[i],capitalized_words[i].capitalize())
     return nom
 
 
