@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
     # TODO completer la fonction
-    nom.capitalize();
+    print(nom.capitalize());
     return nom
 
 
